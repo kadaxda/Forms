@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <form id="wrap" novalidate>
+      <p>
+        <label for="mail">
+          <span>E-Mail:</span>
+          <input type="email" name="mail" id="mail" required />
+        </label>
+      </p>
+      <p>
+        <label for="country">
+          <span>Country:</span>
+          <input type="text" name="country" id="country" required />
+        </label>
+      </p>
+      <p>
+        <label for="zip">
+          <span>Zip Code:</span>
+          <input
+            type="number"
+            name="zip"
+            id="zip"
+            min="10000"
+            max="99999"
+            required
+          />
+        </label>
+      </p>
+      <p>
+        <label for="Password">
+          <span>Password: (Min. 8 Characters)</span>
+          <input
+            type="password"
+            name="Password"
+            id="password"
+            required
+            minlength="8"
+          />
+        </label>
+      </p>
+      <p>
+        <label for="PasswordConfirm">
+          <span>Password:</span>
+          <input
+            type="password"
+            name="PasswordConfirm"
+            id="passwordConfirm"
+            required
+            minlength="8"
+          />
+        </label>
+      </p>
+      <button id="submit">Submit</button>
+    </form>
+
+    <script src="app.js"></script>
+  </body>
+</html>
